@@ -35,10 +35,11 @@ table {
 	<acme:message code="epicure.dashboard.title.FineDish" />
 </h2>
 <table>
+<caption>Fine Dishes Statuses</caption>
 	<tr>
-		<th></th>
+		<th id="blank"></th>
 		<jstl:forEach var="status" items="${fineDishStatuses}">
-			<th>${status}</th>
+			<th id="status">${status}</th>
 		</jstl:forEach>
 	</tr>
 	<tr>
